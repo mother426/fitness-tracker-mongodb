@@ -6,15 +6,15 @@ You can visit the live application at [this link.](https://fitness-tracker-0421.
 
 ![Dashboard for fitness tracker app](/assets/ftdashboard.png)
 
-This is the dashboard/landing page for the application. The dashboard will show summed information from all previous 'exercises' that are contained within the most recent workout. 'Exercises' belong to the 'workout' model as defined in the 'Workout.js' file in /models.
+This is the home-page page for the application. The home-page will show summed information from all previous 'exercises' that are contained within the most recent workout. 'Exercises' belong to the 'workout' model as defined in the 'Workout.js' file in /models.
 
 ![Exercise data form](/assets/ftexerciseform.png)
 
-Data for exercises are collected on the front-end through a form, upon submission these form inputs are sent to the backend and stored in the Mongo database. Persisted data is used to populate graphs and the dashboard page. 
+Data for exercises are collected on the front-end through a form, upon submission these form inputs are sent to the backend and stored in the Mongo database. Persisted data is used to populate graphs on the dashboard page, and the home-page. 
 
 ![Database entires on mongo cloud](/assets/ftmongocollection.png)
 
-Entries on the application are stored to this collection on the Mongo database. Persisted data will be used to populate the front-end (graphs and dashboard).
+Entries on the application are stored to this collection on the Mongo database. Persisted data will be used to populate the front-end (graphs and home-page).
 
 ![Fitness Tracker Graphs](/assets/ftgraphs.png)
 
