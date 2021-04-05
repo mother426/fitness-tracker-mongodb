@@ -10,7 +10,7 @@ This is the home-page page for the application. The home-page will show summed i
 
 ![Exercise data form](/assets/ftexerciseform.png)
 
-Data for exercises are collected on the front-end through a form, upon submission these form inputs are sent to the backend and stored in the Mongo database. Persisted data is used to populate graphs on the dashboard page, and the home-page. 
+Data for exercises is collected on the front-end through a form, upon submission these form data is sent to the backend and stored in the Mongo database. Persisted data is used to populate graphs on the dashboard page, and the home-page. 
 
 ![Database entires on mongo cloud](/assets/ftmongocollection.png)
 
