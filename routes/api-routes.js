@@ -2,7 +2,11 @@ const router = require("express").Router();
 const db = require("../models");
 
 router.get("/api/workouts", (req, res) => {
-  db.Workout.find({}).sort({ date: -1 })
+  db.Workout.aggregate([{
+    $addFields: {
+      totalDuration: {$sum: "$exercises.duration"}
+    }
+  }]).sort({ date: -1 })
     .then((workout) => {
       res.status(200).json(workout);
     })

@@ -41,23 +41,9 @@ const workoutSchema = new Schema(
       default: Date.now,
     },
     exercises: [exerciseSchema],
-  },
-  {
-    toObject: {
-      virtuals: true,
-    },
-    toJSON: {
-      virtuals: true,
-    },
   }
 );
 
-// virtual attribute added to sum all durations, only to be displayed on the front-end. 'totalDuration' is not persisted in database.
-workoutSchema.virtual("totalDuration").get(function () {
-  return this.exercises.reduce((total, exercise) => {
-    return total + exercise.duration;
-  }, 0);
-});
 
 const Workout = mongoose.model("Workout", workoutSchema);
 
